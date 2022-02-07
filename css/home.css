@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif; 
+}
+
+body{
+    background-color: #CBC7B9;
+}
+
+
+
+/*======================================== Navbar CSS ===================================================*/
+
+header{
+    background-color: #A9ADB1;
+}
+
+.navbar{
+    padding-inline: 3%;
+    padding-block: 0px;
+}
+
+.navbar-brand{
+    color: #916755;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.navbar-brand:hover{
+    color: #916755;
+}
+
+.navbar-toggler{
+    box-shadow: none !important;
+}
+
+.fa-bars{
+    color: #242D37;
+}
+
+.nav-link{
+    color: white;
+    outline: 2px solid white;
+    border-radius: 5px;
+    opacity: 0.5;
+}
+
+.nav-link:hover{
+    color: white;
+    opacity: 0.9;
+}
+
+
+/*============================ Banner Section CSS ===================================*/
+
+#banner-section{
+    background-image: url('../images/banner.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 100px 0;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    font-size: 50px;
+    font-weight: bold;
+    color: #916755;
+    margin-left: 0%;
+    cursor: default;
+    background-color: #CBC7B9;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    animation: logoAnimation 20s infinite;
+    animation-delay: 3s;
+}
+
+@keyframes logoAnimation {
+    0%{margin-left: 0%;}
+    25%{margin-left: 10%;}
+    75%{margin-left: -10%;}
+    100%{margin-left: 0%;}
+}
+
+.headline{
+    font-size: 40px;
+    font-style: italic;
+}
+
+/*============================ QuickSearch Section CSS ===================================*/
+
+.QuickSearch{
+    padding: 50px 0; 
+}
+
+.QuickSearch h1{
+    color: #F09649;
+    font-size: 40px;
+}
+
+.QuickSearch h3{
+    color: #00755F;
+    font-size: 30px;
+    line-height: 40%;
+}
+
+.card{
+    width:350px;
+    background-color: #FBF1CA;
+    border-radius: 20px;
+    transition: transform 300ms ease-in-out;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.card img{
+    height: 200px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.card-body{
+    font-size: 25px;
+    font-weight: 600;
+    color: #BD5943;
+}
+
+.card:hover{
+    transform: rotate(3deg);
+}
+
+hr{
+    background-color: #fff;
+    border: 20px solid #fff;
+}
+
+/*========================== Social Section CSS ====================================*/
+
+.social{
+    padding-block: 30px;
+}
+
+.social p{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.social i{
+    font-size: 50px;
+    margin-inline: 15px;
+    transition: 250ms transform ease-in-out;
+}
+
+.fa-facebook-square{
+    color: #3b5998;
+}
+
+.social i:hover{
+    transform: scale(1.1);
+}
+
+.fa-instagram{
+    color: #B62DB4;
+}
+
+.fa-youtube{
+    color:#FF0000;
+}
+
+/*=============== Bulb CSS ====================*/
+.bulb{
+    width: 50px;
+    height: 50px;
+    z-index: 2;
+    position: fixed;
+    top:30%;
+    right: 0;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bulb i{
+    font-size: 40px;
+    cursor: pointer;
+    color: #ffbb73;
+}
+
+
+/*================== Coupon CSS ===================*/
+
+.coupon{
+    position:fixed;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    width: 50%;
+    box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.6), inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
+    background-image: url(../images/couponImg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    visibility: hidden;
+}
+
+.couponDescription{
+    padding: 50px;
+}
+
+.couponDescription h1{
+    color: #fff;
+}
+
+.couponDescription h4{
+   color: #F09649;
+   margin-bottom: 15px;
+}
+
+.couponDescription p{
+    color: #6edc76;
+    font-size: 20px;
+    margin-top: 15px;
+    line-height:25px;
+}
+
+.couponDescription a{
+    color: #ff4949;
+    text-decoration: none;
+}
+
+.couponDescription a:hover{
+    text-decoration: underline;
+}
+
+.coupon span:hover{
+    color: #000000;
+    cursor: pointer;
+}
+
+#weatherIcon img{
+    width: 30px;
+}
+
+/*=============================== Footer Section CSS======================================*/
+
+
+footer{
+    color: #242D37;
+    background-color: #A9ADB1;
+    font-weight: 600;
+    padding-block: 10px;  
+}
+
+.dark{
+    background-color: #302a2a;
+}
+/*==================================== Media Queries ================================*/
+
+
+            /* For Extra Large */
+
+@media screen and (max-width: 1200px){
+    .card{
+        width: 300px;
+    }
+}
+
+
+
+            /* For Large Devices */
+
+@media screen and (max-width: 978px){
+
+    #banner-section{
+        padding-block: 80px; 
+    }
+
+    .logo{
+        width: 90px;
+        height: 90px;
+        font-size: 45px;
+    }
+
+    .headline{
+        font-size: 35px;
+    }
+
+    .coupon{
+        width: 60%;
+    }
+
+    .couponDescription{
+        padding: 40px;
+    }
+}
+
+
+            /* For Medium Devices */
+
+@media screen and (max-width: 768px){
+
+    .navbar-brand{
+        font-size: 25px;
+    }
+    
+    .nav-link{
+        outline: none;
+        border-radius: none;
+        text-align: right;
+    }
+
+    #banner-section{
+        padding-block: 60px; 
+    }
+
+    .logo{
+        width: 80px;
+        height: 80px;
+        font-size: 40px;
+    }
+
+    .headline{
+        font-size: 28px;
+    }
+
+    .dropdown{
+        font-size: 13px;
+    }
+
+    .QuickSearch h1{
+        font-size: 35px;
+    }
+
+    .QuickSearch h3{
+        font-size: 28px;
+    }
+
+    .card{
+        width: 250px;
+    }
+
+    .card img{
+        height: 150px;
+    }
+
+    .card-body{
+        font-size: 20px;
+    }
+    .coupon{
+        width: 75%;
+    }
+    .couponDescription{
+        padding: 30px;
+    }
+}
+
+
+
+            /* For Small Devices */
+
+@media screen and (max-width: 576px){
+
+    .logo{
+        width: 70px;
+        height: 70px;
+        font-size: 35px;
+    }
+
+    .headline{
+        font-size: 23px;
+    }
+
+    .dropdown{
+        font-size: 12px;
+    }
+
+    .QuickSearch h1{
+        font-size: 30px;
+    }
+
+    .QuickSearch h3{
+        font-size: 23px;
+    }
+
+    .social p{
+        font-size: 25px;
+    }
+    .coupon{
+        width: 85%;
+    }
+}
